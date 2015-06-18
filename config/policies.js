@@ -29,9 +29,14 @@ module.exports.policies = {
   // '*': true,
   '*': ['passport', 'sessionAuth'],
 
-  'auth': {
+  'AuthController': {
+    '*': ['passport']
+  },
+
+  'UserController': {
     '*': ['passport']
   }
+
 
   /***************************************************************************
   *                                                                          *
