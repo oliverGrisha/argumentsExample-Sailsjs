@@ -22,6 +22,12 @@
 // no matter where we actually lift from.
 process.chdir(__dirname);
 
+// Load dynamic configuration
+for (var i = 2; i < process.argv.length; i++) {
+  var splitArgv = process.argv[i].split("=");
+  if (splitArgv.length==2) process.argv[splitArgv[0]] = splitArgv[1];
+}
+
 // Ensure a "sails" can be located:
 (function() {
   var sails;

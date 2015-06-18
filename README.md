@@ -1,3 +1,2 @@
-# dinamicDatabaseExample
-
-a [Sails](http://sailsjs.org) application
+# argumentsExample-Sailsjs
+SailsJs application that demonstrates how to pass arguments.
